@@ -3,7 +3,7 @@ About descartes-light
 
 Home: https://github.com/swri-robotics/descartes_light
 
-Package license: 
+Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/tesseract-robotics/descartes-light-feedstock/blob/master/LICENSE.txt)
 
@@ -73,4 +73,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@johnwason](https://github.com/johnwason/)
 

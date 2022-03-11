@@ -41,8 +41,14 @@ test:
     - if not exist %LIBRARY_PREFIX%\lib\cmake\descartes_light\descartes_light-config.cmake (exit 1)  # [win]
 
 build:
-  number: 4
+  number: 5
 
 about:
   home: https://github.com/swri-robotics/descartes_light
   summary: Library for generation motion plans for process toolpaths
+  license: Apache-2.0
+  license_file: src/LICENSE.Apache-2.0
+
+extra:
+  recipe-maintainers:
+    - johnwason

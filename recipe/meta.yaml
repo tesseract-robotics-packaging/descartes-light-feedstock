@@ -40,7 +40,7 @@ test:
     - if not exist %LIBRARY_PREFIX%\lib\cmake\descartes_light\descartes_light-config.cmake (exit 1)  # [win]
 
 build:
-  number: 0
+  number: 1
 
 about:
   home: https://github.com/swri-robotics/descartes_light

@@ -29,6 +29,16 @@ requirements:
     - boost
     - llvm-openmp
 
+test:
+  commands:
+    - test -f ${PREFIX}/include/descartes_light/core/solver.h  # [unix]
+    - test -f ${PREFIX}/lib/libdescartes_light.so  # [unix]
+    - test -f ${PREFIX}/lib/cmake/descartes_light/descartes_light-config.cmake # [unix]
+    - if not exist %LIBRARY_PREFIX%\include\descartes_light\core\solver.h (exit 1)  # [win]
+    - if not exist %LIBRARY_PREFIX%\lib\descartes_light.lib (exit 1)  # [win]
+    - if not exist %LIBRARY_PREFIX%\bin\descartes_light.dll (exit 1)  # [win]
+    - if not exist %LIBRARY_PREFIX%\lib\cmake\descartes_light\descartes_light-config.cmake (exit 1)  # [win]
+
 build:
   number: 0
 

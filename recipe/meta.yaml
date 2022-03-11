@@ -1,10 +1,12 @@
+{% set version = "0.3.0" %}
+
 package:
   name: descartes-light
-  version: 0.3.0
+  version: {{ version }}
 
 source:
   - git_url: https://github.com/swri-robotics/descartes_light.git
-    git_rev: 0.3.0
+    git_rev: {{ version }}
 
 requirements:
   build:

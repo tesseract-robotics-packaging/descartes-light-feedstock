@@ -22,12 +22,12 @@ requirements:
   host:
     - eigen
     - console_bridge
-    - boost
+    - boost-cpp
     - llvm-openmp
   run:
     - eigen
     - console_bridge
-    - boost
+    - boost-cpp
     - llvm-openmp
 
 test:

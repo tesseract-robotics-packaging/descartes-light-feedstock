@@ -23,12 +23,12 @@ requirements:
     - eigen
     - console_bridge
     - boost-cpp
-    - llvm-openmp
+    - openmp
   run:
     - eigen
     - console_bridge
     - boost-cpp
-    - llvm-openmp
+    - openmp
 
 test:
   commands:
@@ -41,7 +41,7 @@ test:
     - if not exist %LIBRARY_PREFIX%\lib\cmake\descartes_light\descartes_light-config.cmake (exit 1)  # [win]
 
 build:
-  number: 5
+  number: 6
 
 about:
   home: https://github.com/swri-robotics/descartes_light

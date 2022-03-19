@@ -8,6 +8,9 @@ source:
   - git_url: https://github.com/swri-robotics/descartes_light.git
     git_rev: {{ version }}
     folder: src
+    patches:
+      - cpp17.patch
+
 
 requirements:
   build:
@@ -41,7 +44,7 @@ test:
     - if not exist %LIBRARY_PREFIX%\lib\cmake\descartes_light\descartes_light-config.cmake (exit 1)  # [win]
 
 build:
-  number: 6
+  number: 7
 
 about:
   home: https://github.com/swri-robotics/descartes_light

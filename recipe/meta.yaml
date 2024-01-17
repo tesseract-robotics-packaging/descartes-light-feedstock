@@ -1,15 +1,13 @@
-{% set version = "0.3.0" %}
+{% set version = "0.4.2" %}
 
 package:
   name: descartes-light
   version: {{ version }}
 
 source:
-  - git_url: https://github.com/swri-robotics/descartes_light.git
-    git_rev: {{ version }}
+  - url: https://github.com/swri-robotics/descartes_light/archive/refs/tags/{{ version }}.tar.gz
+    sha256: 7c9bf12ee58284b3d377683b2f710a0eb69ec34db3631d10e864a22c9770dd2f
     folder: src
-    patches:
-      - cpp17.patch
 
 
 requirements:
@@ -25,12 +23,11 @@ requirements:
   host:
     - eigen
     - console_bridge
-    - boost-cpp
+    - libboost-devel
     - openmp
   run:
     - eigen
     - console_bridge
-    - boost-cpp
     - openmp
 
 test:
@@ -44,7 +41,7 @@ test:
     - if not exist %LIBRARY_PREFIX%\lib\cmake\descartes_light\descartes_light-config.cmake (exit 1)  # [win]
 
 build:
-  number: 8
+  number: 0
 
 about:
   home: https://github.com/swri-robotics/descartes_light

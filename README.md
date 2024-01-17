@@ -1,11 +1,11 @@
-About descartes-light
-=====================
+About descartes-light-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/tesseract-robotics/descartes-light-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/swri-robotics/descartes_light
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/tesseract-robotics/descartes-light-feedstock/blob/master/LICENSE.txt)
 
 Summary: Library for generation motion plans for process toolpaths
 
@@ -33,16 +33,41 @@ conda config --add channels tesseract-robotics
 conda config --set channel_priority strict
 ```
 
-Once the `tesseract-robotics` channel has been enabled, `descartes-light` can be installed with:
+Once the `tesseract-robotics` channel has been enabled, `descartes-light` can be installed with `conda`:
 
 ```
 conda install descartes-light
 ```
 
-It is possible to list all of the versions of `descartes-light` available on your platform with:
+or with `mamba`:
+
+```
+mamba install descartes-light
+```
+
+It is possible to list all of the versions of `descartes-light` available on your platform with `conda`:
 
 ```
 conda search descartes-light --channel tesseract-robotics
+```
+
+or with `mamba`:
+
+```
+mamba search descartes-light --channel tesseract-robotics
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search descartes-light --channel tesseract-robotics
+
+# List packages depending on `descartes-light`:
+mamba repoquery whoneeds descartes-light --channel tesseract-robotics
+
+# List dependencies of `descartes-light`:
+mamba repoquery depends descartes-light --channel tesseract-robotics
 ```
 
 

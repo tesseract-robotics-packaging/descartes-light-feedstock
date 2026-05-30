@@ -40,7 +40,7 @@ requirements:
 tests:
   - package_contents:
       include:
-      - descartes_light\core\solver.h
+      - descartes_light/core/solver.h
       lib:
       - descartes_light
 

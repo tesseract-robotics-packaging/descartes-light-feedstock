@@ -29,11 +29,9 @@ requirements:
     - eigen-abi-devel
     - console_bridge
     - libboost-devel
-    - openmp
   run:
     - eigen
     - console_bridge
-    - openmp
   run_exports:
     - ${{ pin_subpackage('descartes-light', upper_bound='x.x') }}
 

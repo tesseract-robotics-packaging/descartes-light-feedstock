@@ -33,14 +33,14 @@ Current release info
 Installing descartes-light
 ==========================
 
-Installing `descartes-light` from the `tesseract-robotics/label/` channel can be achieved by adding `tesseract-robotics/label/` to your channels with:
+Installing `descartes-light` from the `tesseract-robotics` channel can be achieved by adding `tesseract-robotics` to your channels with:
 
 ```
-conda config --add channels tesseract-robotics/label/
+conda config --add channels tesseract-robotics
 conda config --set channel_priority strict
 ```
 
-Once the `tesseract-robotics/label/` channel has been enabled, `descartes-light` can be installed with `conda`:
+Once the `tesseract-robotics` channel has been enabled, `descartes-light` can be installed with `conda`:
 
 ```
 conda install descartes-light
@@ -55,26 +55,26 @@ mamba install descartes-light
 It is possible to list all of the versions of `descartes-light` available on your platform with `conda`:
 
 ```
-conda search descartes-light --channel tesseract-robotics/label/
+conda search descartes-light --channel tesseract-robotics
 ```
 
 or with `mamba`:
 
 ```
-mamba search descartes-light --channel tesseract-robotics/label/
+mamba search descartes-light --channel tesseract-robotics
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search descartes-light --channel tesseract-robotics/label/
+mamba repoquery search descartes-light --channel tesseract-robotics
 
 # List packages depending on `descartes-light`:
-mamba repoquery whoneeds descartes-light --channel tesseract-robotics/label/
+mamba repoquery whoneeds descartes-light --channel tesseract-robotics
 
 # List dependencies of `descartes-light`:
-mamba repoquery depends descartes-light --channel tesseract-robotics/label/
+mamba repoquery depends descartes-light --channel tesseract-robotics
 ```
 
 
@@ -105,5 +105,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@Levi-Armstrong](https://github.com/Levi-Armstrong/)
 * [@johnwason](https://github.com/johnwason/)
+* [@traversaro](https://github.com/traversaro/)
 
